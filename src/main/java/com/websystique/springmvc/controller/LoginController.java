@@ -43,5 +43,9 @@ public class LoginController {
 	}
 
 
+	@RequestMapping(value = {"/loginUser" }, method = RequestMethod.GET)
+	public String loginUser() {
+		return "dashboard";
+	}
 
 }
