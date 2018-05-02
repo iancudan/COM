@@ -39,10 +39,19 @@ public class AppController {
 	@Autowired
 	MessageSource messageSource;
 
+	@RequestMapping(value = { "/", "/intro" }, method = RequestMethod.GET)
+	public String intro(ModelMap model) {
+
+		List<User> users = userService.findAllUsers();
+		model.addAttribute("users", users);
+		return "intro";
+	}
+
+
 	/**
 	 * This method will list all existing users.
 	 */
-	@RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
+	@RequestMapping(value = {" /list" }, method = RequestMethod.GET)
 	public String listUsers(ModelMap model) {
 
 		List<User> users = userService.findAllUsers();
