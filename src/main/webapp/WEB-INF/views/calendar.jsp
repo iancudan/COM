@@ -313,18 +313,7 @@
 					<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
 				</div>
 			</div>
-			<!-- search form -->
-			<form action="#" method="get" class="sidebar-form">
-				<div class="input-group">
-					<input type="text" name="q" class="form-control" placeholder="Search...">
-					<span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-				</div>
-			</form>
 			<!-- /.search form -->
-			<!-- sidebar menu: : style can be found in sidebar.less -->
 			<!-- sidebar menu: : style can be found in sidebar.less -->
 			<ul class="sidebar-menu" data-widget="tree">
 				<li class="header">MAIN NAVIGATION</li>
@@ -335,7 +324,7 @@
 				</li>
 				<li class="treeview">
 					<a href="#">
-						<i class="fa fa-table"></i> <span>Tables</span>
+						<i class="fa fa-table"></i> <span>Tables View</span>
 						<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -344,7 +333,21 @@
 						<li><a href=""><i class="fa fa-circle-o"></i> Simple tables
 							<small class="label pull-right bg-green">soon</small></a>
 						</li>
-						<li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+						<li><a href="/employee"><i class="fa fa-circle-o"></i> Employee</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-table"></i> <span>Tables Administration</span>
+						<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href=""><i class="fa fa-circle-o"></i> Simple tables ADD
+							<small class="label pull-right bg-green">soon</small></a>
+						</li>
+						<li><a href="/employee"><i class="fa fa-circle-o"></i> Employee Administration</a></li>
 					</ul>
 				</li>
 				<li>

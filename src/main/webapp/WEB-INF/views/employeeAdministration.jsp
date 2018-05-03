@@ -347,10 +347,10 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href=""><i class="fa fa-circle-o"></i> Simple tables ADD
+                        <li><a href=""><i class="fa fa-circle-o"></i> Simple tables
                             <small class="label pull-right bg-green">soon</small></a>
                         </li>
-                        <li><a href="/employee"><i class="fa fa-circle-o"></i> Employee Administration</a></li>
+                        <li><a href="/employee"><i class="fa fa-circle-o"></i> Employee</a></li>
                     </ul>
                 </li>
                 <li>

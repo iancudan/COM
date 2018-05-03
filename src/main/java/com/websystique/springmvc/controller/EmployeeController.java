@@ -31,8 +31,12 @@ public class EmployeeController {
 	 * This method will list all existing users.
 	 */
 	@RequestMapping(value = {"/employee" }, method = RequestMethod.GET)
-	public String login() {
+	public String employee() {
 		return "employee";
 	}
 
+	@RequestMapping(value = {"/employeeAdministration" }, method = RequestMethod.GET)
+	public String employeeAdministration() {
+		return "employeeAdministration";
+	}
 }
