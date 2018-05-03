@@ -402,38 +402,131 @@
 
 
 
-        <label>First Name</label>
-        <input type="text" class="form-control" placeholder="Enter ...">
-        <label>Last Name</label>
-        <input type="text" class="form-control" placeholder="Enter ...">
 
-        <div class="form-group">
-            <label>Functie</label>
-            <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
-                    style="width: 100%;">
-                <option>Alabama</option>
-                <option>Alaska</option>
-                <option>California</option>
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-            </select>
-        </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box-header">
+                        <h3 class="box-title">Input masks</h3>
+                    </div>
+                    <div class="box-body">
 
-        <!-- phone mask -->
-        <div class="form-group">
-            <label>US phone mask:</label>
+                        <div class="col-xs-8">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
 
-            <div class="input-group">
-                <div class="input-group-addon">
-                    <i class="fa fa-phone"></i>
+                        <div class="col-xs-8">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+                    <div class="col-xs-8">
+                        <div class="form-group">
+                            <label>Functie</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <!-- phone mask -->
+                        <div class="form-group">
+                            <label>US phone mask:</label>
+
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <input type="text" class="form-control" data-inputmask='"mask": "+99(999) 999-999"' data-mask>
+                            </div>
+                            <!-- /.input group -->
+                        </div>
+                    </div>
+                        <div class="col-xs-8">
+                                <button type="submit" class="btn btn-primary btn-block btn-flat">Add new employee</button>
+                        </div>
                 </div>
-                <input type="text" class="form-control" data-inputmask='"mask": "+99(999) 999-999"' data-mask>
-            </div>
-            <!-- /.input group -->
-        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-header">
+                        <h3 class="box-title">Concediu</h3>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>Angajat</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                    </div>
 
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>Tip Concediu</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label>Date:</label>
+
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="datepicker">
+                            </div>
+                            <!-- /.input group -->
+                        </div>
+                    </div>
+                    <!-- Date -->
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label>Date:</label>
+
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="datepicker1">
+                            </div>
+                            <!-- /.input group -->
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <label>Reason</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+
+                    <div class="col-xs-6">
+                        <label>Cerere Concediu</label>
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Trimite cerere</button>
+                    </div>
+            </div>
+
+        </div>
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
@@ -453,7 +546,7 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">Data Table With Full Features</h3>
+                            <h3 class="box-title">Angajati Aflati in concediu</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
@@ -462,27 +555,46 @@
                                 <tr>
                                     <th>First Name</th>
                                     <th>Last Name</th>
-                                    <th>Age</th>
                                     <th>Functie</th>
-                                    <th>Data</th>
+                                    <th>De la</th>
+                                    <th>Pana la</th>
+                                    <th>Zile</th>
+                                    <th>Total Zile</th>
+                                    <th>Total zile Ramase</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>Dan</td>
                                     <td>Iancu</td>
-                                    <td>25</td>
                                     <td>Programator</td>
                                     <td>20.02.2000</td>
+                                    <td>20.02.2000</td>
+                                    <td>4</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>Dan</td>
+                                    <td>Iancu</td>
+                                    <td>Programator</td>
+                                    <td>22.02.2000</td>
+                                    <td>22.02.2000</td>
+                                    <td>4</td>
+                                    <td>21</td>
+                                    <td>17</td>
                                 </tr>
                                 </tbody>
                                 <tfoot>
                                 <tr>
                                     <th>First Name</th>
                                     <th>Last Name</th>
-                                    <th>Age</th>
                                     <th>Functie</th>
-                                    <th>Data</th>
+                                    <th>De la</th>
+                                    <th>Pana la</th>
+                                    <th>Zile</th>
+                                    <th>Total Zile</th>
+                                    <th>Total zile Ramase</th>
                                 </tr>
                                 </tfoot>
                             </table>
@@ -506,195 +618,6 @@
         reserved.
     </footer>
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <!-- Home tab content -->
-            <div class="tab-pane" id="control-sidebar-home-tab">
-                <h3 class="control-sidebar-heading">Recent Activity</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                                <p>Will be 23 on April 24th</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-user bg-yellow"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
-
-                                <p>New phone +1(800)555-1234</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
-
-                                <p>nora@example.com</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-file-code-o bg-green"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-
-                                <p>Execution time 5 seconds</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.control-sidebar-menu -->
-
-                <h3 class="control-sidebar-heading">Tasks Progress</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Custom Template Design
-                                <span class="label label-danger pull-right">70%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Update Resume
-                                <span class="label label-success pull-right">95%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Laravel Integration
-                                <span class="label label-warning pull-right">50%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Back End Framework
-                                <span class="label label-primary pull-right">68%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.control-sidebar-menu -->
-
-            </div>
-            <!-- /.tab-pane -->
-            <!-- Stats tab content -->
-            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-            <!-- /.tab-pane -->
-            <!-- Settings tab content -->
-            <div class="tab-pane" id="control-sidebar-settings-tab">
-                <form method="post">
-                    <h3 class="control-sidebar-heading">General Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Report panel usage
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Some information about this general settings option
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Allow mail redirect
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Other sets of options are available
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Expose author name in posts
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Allow the user to show his name in blog posts
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Show me as online
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Turn off notifications
-                            <input type="checkbox" class="pull-right">
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Delete chat history
-                            <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-                </form>
-            </div>
-            <!-- /.tab-pane -->
-        </div>
-    </aside>
     <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
