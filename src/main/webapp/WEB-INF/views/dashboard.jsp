@@ -349,7 +349,7 @@
 						<li><a href=""><i class="fa fa-circle-o"></i> Simple tables
 							<small class="label pull-right bg-green">soon</small></a>
 						</li>
-						<li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+						<li><a href="/employee"><i class="fa fa-circle-o"></i> Employee</a></li>
 					</ul>
 				</li>
 				<li>
