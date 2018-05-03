@@ -367,10 +367,11 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href=""><i class="fa fa-circle-o"></i> Simple tables
+                        <li><a href=""><i class="fa fa-circle-o"></i> Simple tables ADD
                             <small class="label pull-right bg-green">soon</small></a>
                         </li>
-                        <li><a href="/employeeAdministration"><i class="fa fa-circle-o"></i> Employee</a></li>
+                        <li><a href="/employeeAdministration"><i class="fa fa-circle-o"></i> Employee Administration</a></li>
+                        <li><a href="/client"><i class="fa fa-circle-o"></i> Client Administration</a></li>
                     </ul>
                 </li>
                 <li>
@@ -403,58 +404,152 @@
 
 
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="box-header">
-                        <h3 class="box-title">Input masks</h3>
-                    </div>
-                    <div class="box-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-header">
+                    <h3 class="box-title">Input masks</h3>
+                </div>
+                <div class="box-body">
 
-                        <div class="col-xs-8">
+                    <div class="col-xs-8">
                         <label>First Name</label>
                         <input type="text" class="form-control" placeholder="Enter ...">
-                        </div>
+                    </div>
 
-                        <div class="col-xs-8">
+                    <div class="col-xs-8">
                         <label>Last Name</label>
                         <input type="text" class="form-control" placeholder="Enter ...">
-                        </div>
-                    <div class="col-xs-8">
-                        <div class="form-group">
-                            <label>Functie</label>
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected">Alabama</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                            </select>
-                        </div>
                     </div>
                     <div class="col-xs-8">
-                        <!-- phone mask -->
-                        <div class="form-group">
-                            <label>US phone mask:</label>
-
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask='"mask": "+99(999) 999-999"' data-mask>
-                            </div>
-                            <!-- /.input group -->
-                        </div>
+                        <label>Localitate</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
                     </div>
-                        <div class="col-xs-8">
-                                <button type="submit" class="btn btn-primary btn-block btn-flat">Add new employee</button>
-                        </div>
                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-header">
+                    <h3 class="box-title">Concediu</h3>
+                </div>
+                <div class="col-xs-8">
+                    <div class="form-group">
+                        <label>Departament</label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Alabama</option>
+                            <option>Alaska</option>
+                            <option>California</option>
+                            <option>Delaware</option>
+                            <option>Tennessee</option>
+                            <option>Texas</option>
+                            <option>Washington</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <!-- phone mask -->
+                    <div class="form-group">
+                        <label>US phone mask:</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" data-inputmask='"mask": "+99(999) 999-999"' data-mask>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <label>Localitate</label>
+                    <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <div class="col-xs-6">
+                    <label>Cerere Concediu</label>
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Trimite cerere</button>
                 </div>
             </div>
 
         </div>
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Data Tables
+                <small>advanced tables</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Tables</a></li>
+                <li class="active">Data tables</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Angajati Aflati in concediu</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Functie</th>
+                                    <th>De la</th>
+                                    <th>Pana la</th>
+                                    <th>Zile</th>
+                                    <th>Total Zile</th>
+                                    <th>Total zile Ramase</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Dan</td>
+                                    <td>Iancu</td>
+                                    <td>Programator</td>
+                                    <td>20.02.2000</td>
+                                    <td>20.02.2000</td>
+                                    <td>4</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>Dan</td>
+                                    <td>Iancu</td>
+                                    <td>Programator</td>
+                                    <td>22.02.2000</td>
+                                    <td>22.02.2000</td>
+                                    <td>4</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Functie</th>
+                                    <th>De la</th>
+                                    <th>Pana la</th>
+                                    <th>Zile</th>
+                                    <th>Total Zile</th>
+                                    <th>Total zile Ramase</th>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+        <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">

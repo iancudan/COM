@@ -354,6 +354,7 @@
 							<small class="label pull-right bg-green">soon</small></a>
 						</li>
 						<li><a href="/employeeAdministration"><i class="fa fa-circle-o"></i> Employee Administration</a></li>
+						<li><a href="/client"><i class="fa fa-circle-o"></i> Client Administration</a></li>
 					</ul>
 				</li>
 				<li>
