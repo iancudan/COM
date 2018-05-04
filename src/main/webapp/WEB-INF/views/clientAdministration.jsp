@@ -21,12 +21,14 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/static/dist/css/skins/_all-skins.min.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
     <![endif]-->
 
     <!-- daterange picker -->
@@ -438,46 +440,49 @@
                         <label>Localitate</label>
                         <input type="text" class="form-control" placeholder="Enter ...">
                     </div>
+                    <div class="col-xs-8">
+                        <!-- phone mask -->
+                        <div class="form-group">
+                            <label>US phone mask:</label>
+
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <input type="text" class="form-control" data-inputmask='"mask": "+99(999) 999-999"' data-mask>
+                            </div>
+                            <!-- /.input group -->
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="box-header">
-                    <h3 class="box-title">Concediu</h3>
+                    <h3 class="box-title">Detalii comanda</h3>
                 </div>
+
                 <div class="col-xs-8">
                     <div class="form-group">
-                        <label>Departament</label>
-                        <select class="form-control select2" style="width: 100%;">
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
+                        <label>Produse</label>
+                       <%-- <select id="produse" class="form-control select2" multiple="multiple" data-placeholder="Selecteaza Angajati"
+                                style="width: 100%;">
+                        </select>--%>
+                        <select id="produse" class="select2" multiple="multiple" style="width: 100%;">
                         </select>
                     </div>
                 </div>
                 <div class="col-xs-8">
-                    <!-- phone mask -->
-                    <div class="form-group">
-                        <label>US phone mask:</label>
+                    <p>Flat</p>
 
-                        <div class="input-group">
-                            <div class="input-group-addon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <input type="text" class="form-control" data-inputmask='"mask": "+99(999) 999-999"' data-mask>
-                        </div>
-                        <!-- /.input group -->
+                    <div class="input-group margin">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                      <button type="button" class="btn btn-info btn-flat" data-toggle="modal" data-target="#modal-info">Go!</button>
+                    </span>
                     </div>
                 </div>
-                <div class="col-xs-8">
-                    <label>Localitate</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                </div>
                 <div class="col-xs-6">
-                    <label>Cerere Concediu</label>
+                    <label>Comanda</label>
                     <button type="submit" class="btn btn-primary btn-block btn-flat">Trimite cerere</button>
                 </div>
             </div>
@@ -564,6 +569,36 @@
             <!-- /.row -->
         </section>
         <!-- /.content -->
+
+        <div class="modal modal-info fade" id="modal-info">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Info Modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                        <label>Produs</label>
+                        <input id="produs" type="text" class="form-control" placeholder="Enter ...">
+                        <label>Pret</label>
+
+                        <div class="input-group">
+                            <input id="pretProdus" type="number" class="form-control">
+                            <span class="input-group-addon">RON</span>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline" onclick="appendText()">Save changes</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
@@ -627,6 +662,8 @@
 <!-- Page script -->
 
 <script>
+
+    var produseSelectate = [];
     $(function () {
         $('#example1').DataTable()
         $('#example2').DataTable({
@@ -640,6 +677,8 @@
     })
 
     $(function () {
+
+
         //Initialize Select2 Elements
         $('.select2').select2()
 
@@ -704,6 +743,24 @@
             showInputs: false
         })
     })
+
+
+    function appendText() {
+        debugger;
+        //$("#produse").append();
+        var produs = document.getElementById("produs");              // Create text with HTML
+        var pretProdus = document.getElementById("pretProdus");
+        var element = {};
+        element.produs = produs.value;
+        element.pretProdus = pretProdus.value;
+        produseSelectate.push(element);
+
+        for(var i=0;i<produseSelectate.length;i++){
+            $('<option value="' + i + '" selected="selected">' + produseSelectate[i].produs+ "(" +produseSelectate[i].pretProdus+")" + '</option>').appendTo($('#produse'));
+        }
+        $('#modal-info').modal('hide');
+        // Append new elements
+    }
 </script>
 </body>
 </html>
