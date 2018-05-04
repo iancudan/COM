@@ -464,9 +464,6 @@
                 <div class="col-xs-8">
                     <div class="form-group">
                         <label>Produse</label>
-                       <%-- <select id="produse" class="form-control select2" multiple="multiple" data-placeholder="Selecteaza Angajati"
-                                style="width: 100%;">
-                        </select>--%>
                         <select id="produse" class="select2" multiple="multiple" style="width: 100%;">
                         </select>
                     </div>
@@ -477,6 +474,27 @@
                     <div class="input-group margin">
                       <button type="button" class="btn btn-info btn-flat" data-toggle="modal" data-target="#modal-info">Adauga Produs!</button>
                     </span>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <label>Avans</label>
+                    <div class="input-group">
+                        <input id="avans" min="0" max="5" onchange="calculeazaAvans()" type="number" class="form-control">
+                        <span class="input-group-addon">RON</span>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <label>Reducere</label>
+                    <div class="input-group">
+                        <input id="reducere" min="0" onchange="calculeazaReducere()" type="number" class="form-control">
+                        <span class="input-group-addon">RON</span>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <label>Total Plata</label>
+                    <div class="input-group">
+                        <input id="totalPlata" min="0" type="number" class="form-control" readonly>
+                        <span class="input-group-addon">RON</span>
                     </div>
                 </div>
                 <div class="col-xs-6">
@@ -583,7 +601,7 @@
                         <label>Pret</label>
 
                         <div class="input-group">
-                            <input id="pretProdus" type="number" class="form-control">
+                            <input id="pretProdus" min="0" type="number" class="form-control">
                             <span class="input-group-addon">RON</span>
                         </div>
 
@@ -660,7 +678,7 @@
 <!-- Page script -->
 
 <script>
-
+    var suma = 0;
     var produseSelectate = [];
     $(function () {
         $('#example1').DataTable()
@@ -744,7 +762,6 @@
 
 
     function appendText() {
-        debugger;
         //$("#produse").append();
         $('#produse').val(null).trigger('change');
         var produs = document.getElementById("produs");              // Create text with HTML
@@ -753,12 +770,37 @@
         element.produs = produs.value;
         element.pretProdus = pretProdus.value;
         produseSelectate.push(element);
-
+        suma = 0;
         for(var i=0;i<produseSelectate.length;i++){
             $('<option value="' + i + '" selected="selected">' + produseSelectate[i].produs+ "(" +produseSelectate[i].pretProdus+")" + '</option>').appendTo($('#produse'));
+            suma = parseFloat(suma) + parseFloat(produseSelectate[i].pretProdus);
         }
+        suma = parseFloat(suma).toFixed(2);
+        document.getElementById("avans").max = suma;
+        $("#totalPlata").val(suma);
+
         $('#modal-info').modal('hide');
         // Append new elements
+    }
+
+    function calculeazaAvans(){
+        var avans = document.getElementById("avans").value;
+        var totalPlata = suma;
+        if(avans >totalPlata)
+            avans = totalPlata;
+        var nouaSuma = parseFloat(totalPlata) - parseFloat(avans);
+        nouaSuma = parseFloat(nouaSuma).toFixed(2);
+        $("#totalPlata").val(nouaSuma);
+        $("#reducere").val(0);
+        $("#avans").val(avans);
+    }
+
+    function calculeazaReducere(){
+        var reducere = document.getElementById("reducere").value;
+        var totalPlata = document.getElementById("totalPlata").value;
+        var nouaSuma = parseFloat(totalPlata) - parseFloat(reducere);
+        nouaSuma = parseFloat(nouaSuma).toFixed(2);
+        $("#totalPlata").val(nouaSuma);
     }
 </script>
 </body>
