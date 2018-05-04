@@ -606,7 +606,7 @@
 									<small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
 									<!-- General tools such as edit or delete-->
 									<div class="tools">
-										<i class="fa fa-edit"></i>
+										<i class="fa fa-edit" data-toggle="modal" data-target="#modal-info"></i>
 										<i class="fa fa-trash-o"></i>
 									</div>
 								</li>
