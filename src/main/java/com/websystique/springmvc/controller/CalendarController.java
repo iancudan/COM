@@ -31,14 +31,19 @@ public class CalendarController {
 	 * This method will list all existing users.
 	 */
 	@RequestMapping(value = {"/calendar" }, method = RequestMethod.GET)
-	public String login() {
+	public String calendar() {
 		return "calendar";
 	}
 
 
 	@RequestMapping(value = {"/calendarUser" }, method = RequestMethod.GET)
-	public String loginUser() {
+	public String calendarUser() {
 		return "dashboard";
+	}
+
+	@RequestMapping(value = {"/eventAdministration" }, method = RequestMethod.GET)
+	public String eventAdministration() {
+		return "eventAdministration";
 	}
 
 }

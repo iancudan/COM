@@ -249,7 +249,7 @@
 					</a>
 					<ul class="treeview-menu">
 						<li><a href="/calendar"><i class="fa fa-list-ol"></i> List Event</a></li>
-						<li><a href="#"><i class="fa fa-calendar-plus-o"></i>Add Event</a></li>
+						<li><a href="/eventAdministration"><i class="fa fa-calendar-plus-o"></i>Add Event</a></li>
 					</ul>
 				</li>
 
