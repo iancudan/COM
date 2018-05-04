@@ -360,17 +360,25 @@
 						<li><a href="/client"><i class="fa fa-circle-o"></i> Client Administration</a></li>
 					</ul>
 				</li>
-				<li>
-					<a href="/calendar">
+
+
+				<li class="treeview">
+					<a href="#">
 						<i class="fa fa-calendar"></i> <span>Calendar</span>
 						<span class="pull-right-container">
-              <small class="label pull-right bg-red">3</small>
-              <small class="label pull-right bg-blue">17</small>
-            </span>
+							 <small class="label pull-right bg-red">3</small>
+							 <small class="label pull-right bg-blue">17</small>
+              				<i class="fa fa-angle-left pull-right"></i>
+                 </span>
 					</a>
+					<ul class="treeview-menu">
+						<li><a href="/calendar"><i class="fa fa-calendar"></i> Calendar</a></li>
+						<li><a href="#"><i class="fa fa-user-circle-o"></i>Add Event</a></li>
+					</ul>
 				</li>
+
 				<li>
-					<a href="pages/mailbox/mailbox.html">
+					<a href="/mailbox">
 						<i class="fa fa-envelope"></i> <span>Mailbox</span>
 						<span class="pull-right-container">
 						  <small class="label pull-right bg-yellow">12</small>
@@ -379,6 +387,13 @@
 						</span>
 					</a>
 				</li>
+
+				<li>
+					<a href="/">
+						<i class="fa fa-envelope"></i> <span>Admin</span>
+					</a>
+				</li>
+
 			</ul>
 		</section>
 		<!-- /.sidebar -->
@@ -413,7 +428,7 @@
 						<div class="icon">
 							<i class="ion ion-bag"></i>
 						</div>
-						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->
@@ -428,7 +443,7 @@
 						<div class="icon">
 							<i class="ion ion-stats-bars"></i>
 						</div>
-						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->
@@ -443,7 +458,7 @@
 						<div class="icon">
 							<i class="ion ion-person-add"></i>
 						</div>
-						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->
@@ -458,7 +473,7 @@
 						<div class="icon">
 							<i class="ion ion-pie-graph"></i>
 						</div>
-						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->
