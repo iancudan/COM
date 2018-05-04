@@ -461,16 +461,14 @@
                     <h3 class="box-title">Detalii comanda</h3>
                 </div>
 
-                <div class="col-xs-8">
+                <div class="col-xs-6">
                     <div class="form-group">
                         <label>Produse</label>
                         <select id="produse" class="select2" multiple="multiple" style="width: 100%;">
                         </select>
                     </div>
                 </div>
-                <div class="col-xs-8">
-                    <p>Flat</p>
-
+                <div class="col-xs-2">
                     <div class="input-group margin">
                       <button type="button" class="btn btn-info btn-flat" data-toggle="modal" data-target="#modal-info">Adauga Produs!</button>
                     </span>

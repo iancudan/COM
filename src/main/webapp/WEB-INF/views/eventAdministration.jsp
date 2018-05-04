@@ -433,8 +433,8 @@
                         <div class="form-group">
                             <label>Client</label>
                             <select class="form-control select2" style="width: 100%;">
-                                <option>Alabama</option>
-                                <option>Alaska</option>
+                                <option>Popescu Maria</option>
+                                <option>Popescu Ioana</option>
                                 <option>California</option>
                                 <option>Delaware</option>
                                 <option>Tennessee</option>
