@@ -475,9 +475,7 @@
                     <p>Flat</p>
 
                     <div class="input-group margin">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                      <button type="button" class="btn btn-info btn-flat" data-toggle="modal" data-target="#modal-info">Go!</button>
+                      <button type="button" class="btn btn-info btn-flat" data-toggle="modal" data-target="#modal-info">Adauga Produs!</button>
                     </span>
                     </div>
                 </div>
@@ -748,6 +746,7 @@
     function appendText() {
         debugger;
         //$("#produse").append();
+        $('#produse').val(null).trigger('change');
         var produs = document.getElementById("produs");              // Create text with HTML
         var pretProdus = document.getElementById("pretProdus");
         var element = {};
