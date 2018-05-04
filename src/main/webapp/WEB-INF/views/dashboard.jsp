@@ -327,7 +327,7 @@
 			<ul class="sidebar-menu" data-widget="tree">
 				<li class="header">MAIN NAVIGATION</li>
 				<li class="active treeview">
-					<a href="#">
+					<a href="/loginUser">
 						<i class="fa fa-dashboard"></i> <span>Dashboard</span>
 					</a>
 				</li>
@@ -390,7 +390,7 @@
 
 				<li>
 					<a href="/">
-						<i class="fa fa-envelope"></i> <span>Admin</span>
+						<i class="fa fa-user-secret"></i> <span>Admin</span>
 					</a>
 				</li>
 

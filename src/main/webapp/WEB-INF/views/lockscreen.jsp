@@ -217,13 +217,13 @@
 			<ul class="sidebar-menu" data-widget="tree">
 				<li class="header">MAIN NAVIGATION</li>
 				<li class="active treeview">
-					<a href="#">
+					<a href="/loginUser">
 						<i class="fa fa-dashboard"></i> <span>Dashboard</span>
 					</a>
 				</li>
 				<li class="treeview">
 					<a href="#">
-						<i class="fa fa-table"></i> <span>Tables View</span>
+						<i class="fa fa-eye"></i> <span>Tables View</span>
 						<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -232,12 +232,12 @@
 						<li><a href=""><i class="fa fa-circle-o"></i> Simple tables
 							<small class="label pull-right bg-green">soon</small></a>
 						</li>
-						<li><a href="/employee"><i class="fa fa-circle-o"></i> Employee</a></li>
+						<li><a href="/employee"><i class="fa fa-user"></i> Employee</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
 					<a href="#">
-						<i class="fa fa-table"></i> <span>Tables Administration</span>
+						<i class="fa fa-cogs"></i> <span>Tables Administration</span>
 						<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -246,8 +246,8 @@
 						<li><a href=""><i class="fa fa-circle-o"></i> Simple tables ADD
 							<small class="label pull-right bg-green">soon</small></a>
 						</li>
-						<li><a href="/employeeAdministration"><i class="fa fa-circle-o"></i> Employee Administration</a></li>
-						<li><a href="/client"><i class="fa fa-circle-o"></i> Client Administration</a></li>
+						<li><a href="/employeeAdministration"><i class="fa fa-user-circle-o"></i> Employee Administration</a></li>
+						<li><a href="/client"><i class="fa fa-handshake-o"></i> Client Administration</a></li>
 					</ul>
 				</li>
 
@@ -262,8 +262,8 @@
                  </span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="/calendar"><i class="fa fa-calendar"></i> Calendar</a></li>
-						<li><a href="#"><i class="fa fa-user-circle-o"></i>Add Event</a></li>
+						<li><a href="/calendar"><i class="fa fa-list-ol"></i> List Event</a></li>
+						<li><a href="#"><i class="fa fa-calendar-plus-o"></i>Add Event</a></li>
 					</ul>
 				</li>
 
@@ -280,13 +280,12 @@
 
 				<li>
 					<a href="/">
-						<i class="fa fa-envelope"></i> <span>Admin</span>
+						<i class="fa fa-user-secret"></i> <span>Admin</span>
 					</a>
 				</li>
 
 			</ul>
 		</section>
-		<!-- /.sidebar -->
 	</aside>
 
 	<!-- =============================================== -->
