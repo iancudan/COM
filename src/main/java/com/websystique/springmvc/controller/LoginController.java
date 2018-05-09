@@ -33,10 +33,6 @@ public class LoginController {
 	MessageSource messageSource;
 
 
-
-	/**
-	 * This method will list all existing users.
-	 */
 	@RequestMapping(value = {"/login" }, method = RequestMethod.GET)
 	public String login() {
 		return "login";
