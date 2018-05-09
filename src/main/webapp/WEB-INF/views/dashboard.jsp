@@ -423,7 +423,7 @@
 						<div class="inner">
 							<h3>150</h3>
 
-							<p>New Orders</p>
+							<p>Comenzi</p>
 						</div>
 						<div class="icon">
 							<i class="ion ion-bag"></i>
@@ -438,7 +438,7 @@
 						<div class="inner">
 							<h3>53<sup style="font-size: 20px">%</sup></h3>
 
-							<p>Bounce Rate</p>
+							<p>Rata Finalizare</p>
 						</div>
 						<div class="icon">
 							<i class="ion ion-stats-bars"></i>
@@ -453,7 +453,7 @@
 						<div class="inner">
 							<h3>44</h3>
 
-							<p>User Registrations</p>
+							<p>Administreaza clienti</p>
 						</div>
 						<div class="icon">
 							<i class="ion ion-person-add"></i>
@@ -468,10 +468,10 @@
 						<div class="inner">
 							<h3>65</h3>
 
-							<p>Unique Visitors</p>
+							<p>Administreaza Masini</p>
 						</div>
 						<div class="icon">
-							<i class="ion ion-pie-graph"></i>
+							<i class="fa fa-truck"></i>
 						</div>
 						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
@@ -648,6 +648,79 @@
 							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
 								Add Item
 							</button>
+						</div>
+					</div>
+					<!-- /.box -->
+
+
+					<!-- COMING SOON EVENTS -->
+					<div class="box box-primary">
+						<div class="box-header">
+							<i class="ion ion-clipboard"></i>
+
+							<h3 class="box-title">COMING SOON EVENTS</h3>
+
+							<div class="box-tools pull-right">
+								<ul class="pagination pagination-sm inline">
+									<li><a href="#">&laquo;</a></li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
+							<ul class="todo-list">
+								<li>
+									<!-- drag handle -->
+									<span class="handle">
+                        <i class="fa fa-hourglass-half"></i>
+                      </span>
+									<!-- todo text -->
+									<span class="text">Design a nice theme</span>
+									<!-- Emphasis label -->
+									<small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+									<!-- General tools such as edit or delete-->
+								</li>
+								<li>
+                      <span class="handle">
+                       <i class="fa fa-hourglass-half"></i>
+                      </span>
+									<span class="text">Make the theme responsive</span>
+									<small class="label label-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+								</li>
+								<li>
+                      <span class="handle">
+                      <i class="fa fa-hourglass-half"></i>
+                      </span>
+									<span class="text">Let theme shine like a star</span>
+									<small class="label label-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+								</li>
+								<li>
+                      <span class="handle">
+                       <i class="fa fa-hourglass-half"></i>
+                      </span>
+									<span class="text">Let theme shine like a star</span>
+									<small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
+								</li>
+								<li>
+                      <span class="handle">
+                       <i class="fa fa-hourglass-half"></i>
+                      </span>
+									<span class="text">Check your messages and notifications</span>
+									<small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+								</li>
+								<li>
+                      <span class="handle">
+                        <i class="fa fa-hourglass-half"></i>
+                      </span>
+									<span class="text">Let theme shine like a star</span>
+									<small class="label label-default"><i class="fa fa-clock-o"></i> 1 month</small>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<!-- /.box -->
