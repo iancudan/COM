@@ -414,8 +414,11 @@
 				<small>Control panel</small>
 			</h1>
 			<ol class="breadcrumb">
+				<a onclick="fnExcelReport()">
+				<i class="fa fa-file-excel-o" style="font-size: 250%;" title="Export in excel "></i>
+				</a>
 				<a onclick="fnExcelReportTable()">
-				<i class="fa fa-file-excel-o" style="font-size: 250%;" title="Export in excel"></i>
+					<i class="fa fa-globe" style="font-size: 250%;" title="Export All Data"></i>
 				</a>
 			</ol>
 		</section>
