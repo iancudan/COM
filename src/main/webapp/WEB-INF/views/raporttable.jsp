@@ -414,7 +414,7 @@
 				<small>Control panel</small>
 			</h1>
 			<ol class="breadcrumb">
-				<a onclick="fnExcelReport()">
+				<a onclick="fnExcelReportTable()">
 				<i class="fa fa-file-excel-o" style="font-size: 250%;" title="Export in excel"></i>
 				</a>
 			</ol>
@@ -1267,20 +1267,19 @@
         tab = document.getElementById('example'); // id of table
 
         for (j = 0; j < $("#example").dataTable().fnGetData().length; j++) {
-            if (j > 0) {
-                rows="";
+            rows = "";
+            if(j>0) {
+                rows = "";
                 for (var i = 0; i < $("#example").dataTable().fnGetData()[i].length; i++) {
-                    rows += '<td>' + $("#example").dataTable().fnGetData()[i] + '</td>'
+                    rows += '<td>' + $("#example").dataTable().fnGetData()[j][i] + '</td>'
                 }
-            }
+            }else{
+                rows=document.getElementById("example").tHead.innerHTML;
+			}
             tab_text = tab_text + rows + "</tr>";
             //tab_text=tab_text+"</tr>";
         }
 
-        for(var i=0;i<$("#example").dataTable().fnGetData().length;i++){
-
-		}
-        debugger;
         tab_text=tab_text+"</table>";
         tab_text= tab_text.replace(/<A[^>]*>|<\/A>/g, "");//remove if u want links in your table
         tab_text= tab_text.replace(/<img[^>]*>/gi,""); // remove if u want images in your table
