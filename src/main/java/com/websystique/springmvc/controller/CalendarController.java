@@ -35,12 +35,6 @@ public class CalendarController {
 		return "calendar";
 	}
 
-
-	@RequestMapping(value = {"/calendarUser" }, method = RequestMethod.GET)
-	public String calendarUser() {
-		return "dashboard";
-	}
-
 	@RequestMapping(value = {"/eventAdministration" }, method = RequestMethod.GET)
 	public String eventAdministration() {
 		return "eventAdministration";
