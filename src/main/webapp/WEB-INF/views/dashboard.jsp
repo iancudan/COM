@@ -51,7 +51,7 @@
 						<div class="icon">
 							<i class="ion ion-stats-bars"></i>
 						</div>
-						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						<a href="/lockscreen" class="small-box-footer">Acceseaza <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->
@@ -66,7 +66,7 @@
 						<div class="icon">
 							<i class="ion ion-person-add"></i>
 						</div>
-						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						<a href="/client" class="small-box-footer">Acceseaza <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->
@@ -74,14 +74,14 @@
 					<!-- small box -->
 					<div class="small-box bg-red">
 						<div class="inner">
-							<h3>65</h3>
+							<h3>3</h3>
 
-							<p>Administreaza Masini</p>
+							<p>Rapoarte</p>
 						</div>
 						<div class="icon">
-							<i class="fa fa-truck"></i>
+							<i class="fa fa-file"></i>
 						</div>
-						<a href="/lockscreen" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						<a href="/rapoarte" class="small-box-footer">Acceseaza <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->
@@ -180,7 +180,7 @@
 									<small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
 									<!-- General tools such as edit or delete-->
 									<div class="tools">
-										<i class="fa fa-edit" data-toggle="modal" data-target="#modal-info"></i>
+										<i class="fa fa-edit" onclick="dataToggle('#modal-info')"></i>
 										<i class="fa fa-trash-o"></i>
 									</div>
 								</li>
@@ -253,7 +253,7 @@
 						</div>
 						<!-- /.box-body -->
 						<div class="box-footer clearfix no-border">
-							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
+							<button type="button" class="btn btn-info" onclick="dataToggle('#modal-info')">
 								Add Item
 							</button>
 						</div>
@@ -383,7 +383,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-outline">Save changes</button>
+					<button type="button" class="btn btn-outline" data-dismiss="modal">Save changes</button>
 				</div>
 			</div>
 			<!-- /.modal-content -->
@@ -393,7 +393,6 @@
 	<!-- /.modal -->
 </div>
 <!-- ./wrapper -->
-
 
 <script>
     $(function () {
@@ -459,6 +458,10 @@
             showInputs: false
         });
     })
+
+	function dataToggle(id) {
+        $(id).modal('toggle');
+	}
 </script>
 </body>
 
