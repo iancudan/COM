@@ -96,6 +96,7 @@
 
         </div>
         <!-- /.content -->
+        <%@include file="includes/advertisment.html" %>
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
