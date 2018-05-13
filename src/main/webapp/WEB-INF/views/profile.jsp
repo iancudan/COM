@@ -100,7 +100,7 @@
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
 						<li><a href="#timeline" data-toggle="tab">Timeline</a></li>
-						<li><a href="#settings" data-toggle="tab">Settings</a></li>
+						<li><a href="#settings" data-toggle="tab">Email</a></li>
 					</ul>
 					<div class="tab-content">
 						<div class="active tab-pane" id="activity">
@@ -272,10 +272,10 @@
 											<p></p><i class="fa fa-map-marker"></i>
 											<p></p><i class="fa fa-phone-square"></i>
 											<p></p><i class="fa fa-mobile-phone"></i>
-											<p>@</p>
+											<p>@<span id="emailTO">hello@email.com</span></p>
 										</div>
 										<div class="timeline-footer">
-											<a class="btn btn-primary btn-xs">Send email</a>
+											<a class="btn btn-primary btn-xs" onclick="sendEmailTo()">Send email</a>
 										</div>
 									</div>
 								</li>
@@ -310,7 +310,7 @@
 									<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 
 									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+										<input id="emailTOColaborator" type="email" class="form-control" id="inputEmail" placeholder="Email">
 									</div>
 								</div>
 								<div class="form-group">
@@ -372,6 +372,14 @@
     $(document).ready(function () {
         $('.sidebar-menu').tree()
     })
+
+	function sendEmailTo(){
+        debugger;
+        var email = document.getElementById('emailTO').innerHTML;
+        $('#emailTOColaborator').val(email);
+        document.getElementById('emailTOColaborator').readOnly = true;
+        $('.nav-tabs a[href="#settings"]').tab('show');
+	}
 </script>
 </body>
 </html>
