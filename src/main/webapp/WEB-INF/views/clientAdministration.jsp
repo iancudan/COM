@@ -6,8 +6,6 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
-
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <div class="row">
@@ -44,9 +42,21 @@
                             <!-- /.input group -->
                         </div>
                     </div>
+                    <div class="col-xs-8">
+                        <!-- phone mask -->
+                        <div class="form-group">
+
+                                <div class="checkbox">
+                                   <b> <label style="font-weight:bold;font-size: 16px">
+                                        <input id="checkboxFactura" type="checkbox" onclick="detaliiFactura();"> Detalii Factura
+                                </label></b>
+                                </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div id="factura" style="display: none;" class="col-md-6">
                 <div class="box-header">
                     <h3 class="box-title">Detalii comanda</h3>
                 </div>
@@ -83,13 +93,16 @@
                         <span class="input-group-addon">RON</span>
                     </div>
                 </div>
-                <div class="col-xs-6">
-                    <label>Comanda</label>
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Trimite cerere</button>
-                </div>
             </div>
 
         </div>
+        <section class="content-header">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Adauga Client</button>
+                </div>
+            </div>
+        </section>
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
@@ -342,6 +355,17 @@
 
     function dataToggle(id) {
         $(id).modal('toggle');
+    }
+
+    function detaliiFactura(){
+        var checkBox = document.getElementById("checkboxFactura");
+        var detaliiFactura = document.getElementById("factura");
+
+        if (checkBox.checked == true){
+            detaliiFactura.style.display = "block";
+        } else {
+            detaliiFactura.style.display = "none";
+        }
     }
 </script>
 </body>
