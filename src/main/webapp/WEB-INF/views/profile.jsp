@@ -81,6 +81,14 @@
 						<p></p><i class="fa fa-phone-square"></i>
 						<p></p><i class="fa fa-mobile-phone"></i>
 						<p>@</p>
+						<strong><i class="fa fa-file-text-o margin-r-5"></i> Incarca 4 poze</strong>
+						<p></p>
+						<div class="form-group">
+							<div class="box">
+								<label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Select a image to upload&hellip;</span></label>
+								<input style="display: none;" type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+							</div>
+						</div>
 					</div>
 					<!-- /.box-body -->
 				</div>
@@ -106,8 +114,13 @@
                         </span>
 								</div>
 
-								<input class="form-control input-sm" type="text" placeholder="Type a comment">
-								<%--<button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>--%>
+								<div class="form-group">
+									<label for="inputExperience" class="col-sm-2 control-label">Activitate</label>
+
+									<div class="col-sm-10">
+										<textarea class="form-control" id="inputExperience" placeholder="Body"></textarea>
+									</div>
+								</div>
 
 							</div>
 							<!-- /.post -->
@@ -121,9 +134,13 @@
                         </span>
 								</div>
 
-								<input class="form-control input-sm" type="text" placeholder="Type a comment">
-								<%--<button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>--%>
+								<div class="form-group">
+									<label for="inputExperience" class="col-sm-2 control-label">Locatie</label>
 
+									<div class="col-sm-10">
+										<textarea class="form-control" id="inputExperience" placeholder="Body"></textarea>
+									</div>
+								</div>
 							</div>
 							<!-- /.post -->
 							<!-- Post -->
@@ -136,8 +153,13 @@
                         </span>
 								</div>
 
-								<input class="form-control input-sm" type="text" placeholder="Type a comment">
-								<%--<button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>--%>
+								<div class="form-group">
+									<label for="inputExperience" class="col-sm-2 control-label">Lucrari</label>
+
+									<div class="col-sm-10">
+										<textarea class="form-control" id="inputExperience" placeholder="Body"></textarea>
+									</div>
+								</div>
 
 							</div>
 							<!-- /.post -->
@@ -150,11 +172,16 @@
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
                         </span>
 								</div>
+								<div class="form-group">
+									<label for="inputExperience" class="col-sm-2 control-label">Contact</label>
 
-								<input class="form-control input-sm" type="text" placeholder="Type a comment">
-								<input class="form-control input-sm" type="text" placeholder="Type a comment">
-								<input class="form-control input-sm" type="text" placeholder="Type a comment">
-								<%--<button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>--%>
+									<div class="col-sm-10">
+										<input class="form-control input-sm" type="text" placeholder="Type a comment">
+										<input class="form-control input-sm" type="text" placeholder="Type a comment">
+										<input class="form-control input-sm" type="text" placeholder="Type a comment">
+									</div>
+								</div>
+
 
 							</div>
 							<!-- /.post -->
@@ -167,12 +194,31 @@
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
                         </span>
 								</div>
+								<div class="form-group">
+									<label for="inputExperience" class="col-sm-2 control-label">Domeniu de activitate</label>
 
-								<input class="form-control input-sm" type="text" placeholder="Type a comment">
-								<%--<button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>--%>
-								<button type="submit" class="btn btn-danger pull-right btn-block btn-sm">UPDATE</button>
+									<div class="col-sm-10">
+										<textarea class="form-control" id="inputExperience" placeholder="Body"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputExperience" class="col-sm-2 control-label">Update</label>
+
+									<div class="col-sm-10">
+										<button type="submit" class="btn btn-danger pull-right btn-block btn-sm">UPDATE</button>
+									</div>
+								</div>
+
+
 							</div>
 							<!-- /.post -->
+
+							<!-- Post -->
+							<div class="post">
+								<div class="user-block">
+
+								</div>
+							</div>
 
 						</div>
 						<!-- /.tab-pane -->
@@ -182,79 +228,65 @@
 								<!-- timeline time label -->
 								<li class="time-label">
                         <span class="bg-red">
-                          10 Feb. 2014
+                          Colaboratori
                         </span>
 								</li>
 								<!-- /.timeline-label -->
-								<!-- timeline item -->
-								<li>
-									<i class="fa fa-envelope bg-blue"></i>
 
-									<div class="timeline-item">
-										<span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
-
-										<h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
-
-										<div class="timeline-body">
-											Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-											weebly ning heekya handango imeem plugg dopplr jibjab, movity
-											jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-											quora plaxo ideeli hulu weebly balihoo...
-										</div>
-										<div class="timeline-footer">
-											<a class="btn btn-primary btn-xs">Read more</a>
-											<a class="btn btn-danger btn-xs">Delete</a>
-										</div>
-									</div>
-								</li>
-								<!-- END timeline item -->
 								<!-- timeline item -->
 								<li>
 									<i class="fa fa-user bg-aqua"></i>
 
 									<div class="timeline-item">
-										<span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
-
-										<h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request
+										<h3 class="timeline-header no-border"><a href="#">Nelian Serex</a> are ca domeniu de activitate producator
 										</h3>
 									</div>
 								</li>
 								<!-- END timeline item -->
 								<!-- timeline item -->
+
 								<li>
 									<i class="fa fa-comments bg-yellow"></i>
 
 									<div class="timeline-item">
-										<span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
 
-										<h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+										<h3 class="timeline-header"><a href="#">Nelian Serex</a> Activitate</h3>
 
 										<div class="timeline-body">
 											Take me to your leader!
 											Switzerland is small and neutral!
 											We are more like Germany, ambitious and misunderstood!
 										</div>
-										<div class="timeline-footer">
-											<a class="btn btn-warning btn-flat btn-xs">View comment</a>
-										</div>
 									</div>
 								</li>
 								<!-- END timeline item -->
 								<!-- timeline time label -->
-								<li class="time-label">
-                        <span class="bg-green">
-                          3 Jan. 2014
-                        </span>
+								<!-- timeline item -->
+								<li>
+									<i class="fa fa-envelope bg-blue"></i>
+
+									<div class="timeline-item">
+										<h3 class="timeline-header"><a href="#">Nelian Serex</a> Contact</h3>
+
+										<div class="timeline-body">
+											<p></p><i class="fa fa-map-marker"></i>
+											<p></p><i class="fa fa-phone-square"></i>
+											<p></p><i class="fa fa-mobile-phone"></i>
+											<p>@</p>
+										</div>
+										<div class="timeline-footer">
+											<a class="btn btn-primary btn-xs">Send email</a>
+										</div>
+									</div>
 								</li>
+								<!-- END timeline item -->
 								<!-- /.timeline-label -->
 								<!-- timeline item -->
 								<li>
 									<i class="fa fa-camera bg-purple"></i>
 
 									<div class="timeline-item">
-										<span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
-
-										<h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+										<h3 class="timeline-header"><a href="#">Nelian Serex</a> Poze Activitate</h3>
 
 										<div class="timeline-body">
 											<img src="http://placehold.it/150x100" alt="..." class="margin">
@@ -275,13 +307,6 @@
 						<div class="tab-pane" id="settings">
 							<form class="form-horizontal">
 								<div class="form-group">
-									<label for="inputName" class="col-sm-2 control-label">Name</label>
-
-									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputName" placeholder="Name">
-									</div>
-								</div>
-								<div class="form-group">
 									<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 
 									<div class="col-sm-10">
@@ -296,26 +321,17 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputExperience" class="col-sm-2 control-label">Experience</label>
+									<label for="inputName" class="col-sm-2 control-label">Subject</label>
 
 									<div class="col-sm-10">
-										<textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+										<input type="text" class="form-control" id="inputName" placeholder="Name">
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputSkills" class="col-sm-2 control-label">Skills</label>
+									<label for="inputExperience" class="col-sm-2 control-label">Body</label>
 
 									<div class="col-sm-10">
-										<input type="text" class="form-control" id="inputSkills" placeholder="Skills">
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-2 col-sm-10">
-										<div class="checkbox">
-											<label>
-												<input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-											</label>
-										</div>
+										<textarea class="form-control" id="inputExperience" placeholder="Body"></textarea>
 									</div>
 								</div>
 								<div class="form-group">
