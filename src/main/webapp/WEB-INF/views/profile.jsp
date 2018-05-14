@@ -374,7 +374,6 @@
     })
 
 	function sendEmailTo(){
-        debugger;
         var email = document.getElementById('emailTO').innerHTML;
         $('#emailTOColaborator').val(email);
         document.getElementById('emailTOColaborator').readOnly = true;

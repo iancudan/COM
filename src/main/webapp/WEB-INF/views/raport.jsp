@@ -107,6 +107,48 @@
 						<a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-info">Rulare raport <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
+				<div class="col-lg-4 col-xs-6">
+					<!-- small box -->
+					<div class="small-box bg-aqua">
+						<div class="inner">
+							<h3>Raport lunar</h3>
+							<p>Acest raport va arata o statistica</p>
+							<p>lunara despre clienti</p>
+						</div>
+						<div class="icon">
+							<i class="fa fa-pie-chart"></i>
+						</div>
+						<a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-info-lunar">Rulare raport <i class="fa fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-6">
+					<!-- small box -->
+					<div class="small-box bg-aqua">
+						<div class="inner">
+							<h3>Raport lunar</h3>
+							<p>Acest raport va arata o statistica</p>
+							<p>lunara despre clienti</p>
+						</div>
+						<div class="icon">
+							<i class="fa fa-bar-chart"></i>
+						</div>
+						<a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-info-lunar">Rulare raport <i class="fa fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-6">
+					<!-- small box -->
+					<div class="small-box bg-aqua">
+						<div class="inner">
+							<h3>Raport lunar</h3>
+							<p>Acest raport va arata o statistica</p>
+							<p>lunara despre clienti</p>
+						</div>
+						<div class="icon">
+							<i class="fa fa-line-chart"></i>
+						</div>
+						<a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-info-lunar">Rulare raport <i class="fa fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
 			</div>
 			<!-- /.row -->
 			<!-- Main row -->
