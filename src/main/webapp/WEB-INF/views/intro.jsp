@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 
 <head>
@@ -12,12 +14,140 @@
 	<link href="/static/css/style.css" rel="stylesheet" media="screen">
 	<link href="/static/color/default.css" rel="stylesheet" media="screen">
 
-	<!-- =======================================================
-      Theme Name: Alstar
-      Theme URL: https://bootstrapmade.com/alstar-free-parallax-bootstrap-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
+<style>
+	.content {
+		padding: 30px 0;
+	}
+
+	/***
+    Pricing table
+    ***/
+	.pricing {
+		position: relative;
+		margin-bottom: 15px;
+		border: 3px solid #eee;
+	}
+
+	.pricing-active {
+		border: 3px solid #36d7ac;
+		margin-top: -10px;
+		box-shadow: 7px 7px rgba(54, 215, 172, 0.2);
+	}
+
+	.pricing:hover {
+		border: 3px solid #36d7ac;
+	}
+
+	.pricing:hover h4 {
+		color: #36d7ac;
+	}
+
+	.pricing-head {
+		text-align: center;
+	}
+
+	.pricing-head h3,
+	.pricing-head h4 {
+		margin: 0;
+		line-height: normal;
+	}
+
+	.pricing-head h3 span,
+	.pricing-head h4 span {
+		display: block;
+		margin-top: 5px;
+		font-size: 14px;
+		font-style: italic;
+	}
+
+	.pricing-head h3 {
+		font-weight: 300;
+		color: #fafafa;
+		padding: 12px 0;
+		font-size: 27px;
+		background: #36d7ac;
+		border-bottom: solid 1px #41b91c;
+	}
+
+	.pricing-head h4 {
+		color: #bac39f;
+		padding: 5px 0;
+		font-size: 54px;
+		font-weight: 300;
+		background: #fbfef2;
+		border-bottom: solid 1px #f5f9e7;
+	}
+
+	.pricing-head-active h4 {
+		color: #36d7ac;
+	}
+
+	.pricing-head h4 i {
+		top: -8px;
+		font-size: 28px;
+		font-style: normal;
+		position: relative;
+	}
+
+	.pricing-head h4 span {
+		top: -10px;
+		font-size: 14px;
+		font-style: normal;
+		position: relative;
+	}
+
+	/*Pricing Content*/
+	.pricing-content li {
+		color: #888;
+		font-size: 12px;
+		padding: 7px 15px;
+		border-bottom: solid 1px #f5f9e7;
+	}
+
+	/*Pricing Footer*/
+	.pricing-footer {
+		color: #777;
+		font-size: 11px;
+		line-height: 17px;
+		text-align: center;
+		padding: 0 20px 19px;
+	}
+
+	/*Priceing Active*/
+	.price-active,
+	.pricing:hover {
+		z-index: 9;
+	}
+
+	.price-active h4 {
+		color: #36d7ac;
+	}
+
+	.no-space-pricing .pricing:hover {
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	.no-space-pricing .price-active .pricing-head h4,
+	.no-space-pricing .pricing:hover .pricing-head h4 {
+		color: #36d7ac;
+		padding: 15px 0;
+		font-size: 80px;
+		transition: color 0.5s ease-in-out;
+	}
+
+	.yellow-crusta.btn {
+		color: #FFFFFF;
+		background-color: #f3c200;
+	}
+	.yellow-crusta.btn:hover,
+	.yellow-crusta.btn:focus,
+	.yellow-crusta.btn:active,
+	.yellow-crusta.btn.active {
+		color: #FFFFFF;
+		background-color: #cfa500;
+	}
+</style>
+
 </head>
 
 <body>
@@ -34,8 +164,7 @@
 			</button>
 
 			<!-- Logo text or image -->
-			<a class="navbar-brand" href="index.html">Alstar</a>
-
+			<a class="navbar-brand" href="/login">Alstar</a>
 		</div>
 		<div class="navigation collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
@@ -45,7 +174,7 @@
 				<li><a href="#portfolio">Works</a></li>
 				<li><a href="#team">Team</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a href="<c:url value='/login' />">Login</a></li>
+				<li><a href="#price">Buy Now</a></li>
 			</ul>
 		</div>
 	</div>
@@ -328,7 +457,179 @@
 		</div>
 	</div>
 </section>
+<!-- Price -->
+<section id="price" class="home-section bg-white">
+	<div class="row">
+		<div class="col-md-offset-2 col-md-8">
+			<div class="section-heading">
+				<h2>Pricing</h2>
+				<div class="heading-line"></div>
+				<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+		</div>
+	</div>
+<div class="row">
+	<div class="container content">
+		<div class="row">
+			<!-- Pricing -->
+			<div class="col-md-3">
+				<div class="pricing hover-effect">
+					<div class="pricing-head">
+						<h3>Begginer <span>
+					Officia deserunt mollitia </span>
+						</h3>
+						<h4><i>$</i>5<i>.49</i>
+							<span>
+					Per Month </span>
+						</h4>
+					</div>
+					<ul class="pricing-content list-unstyled">
+						<li>
+							At vero eos
+						</li>
+						<li>
+							No Support
+						</li>
+						<li>
+							Fusce condimentum
+						</li>
+						<li>
+							Ut non libero
+						</li>
+						<li>
+							Consecte adiping elit
+						</li>
+					</ul>
+					<div class="pricing-footer">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+						</p>
+						<a href="#contact" class="btn yellow-crusta">
+							Sign Up
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="pricing hover-effect">
+					<div class="pricing-head">
+						<h3>Pro <span>
+					Officia deserunt mollitia </span>
+						</h3>
+						<h4><i>$</i>8<i>.69</i>
+							<span>
+					Per Month </span>
+						</h4>
+					</div>
+					<ul class="pricing-content list-unstyled">
+						<li>
+							At vero eos
+						</li>
+						<li>
+							No Support
+						</li>
+						<li>
+							Fusce condimentum
+						</li>
+						<li>
+							Ut non libero
+						</li>
+						<li>
+							Consecte adiping elit
+						</li>
+					</ul>
+					<div class="pricing-footer">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+						</p>
+						<a href="#contact" class="btn yellow-crusta">
+							Sign Up
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="pricing pricing-active hover-effect">
+					<div class="pricing-head pricing-head-active">
+						<h3>Expert <span>
+					Officia deserunt mollitia </span>
+						</h3>
+						<h4><i>$</i>13<i>.99</i>
+							<span>
+					Per Month </span>
+						</h4>
+					</div>
+					<ul class="pricing-content list-unstyled">
+						<li>
+							At vero eos
+						</li>
+						<li>
+							No Support
+						</li>
+						<li>
+							Fusce condimentum
+						</li>
+						<li>
+							Ut non libero
+						</li>
+						<li>
+							Consecte adiping elit
+						</li>
+					</ul>
+					<div class="pricing-footer">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+						</p>
+						<a href="#contact" class="btn yellow-crusta">
+							Sign Up
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="pricing hover-effect">
+					<div class="pricing-head">
+						<h3>Hi-Tech <span>
+					Officia deserunt mollitia </span>
+						</h3>
+						<h4><i>$</i>99<i>.00</i>
+							<span>
+					Per Month </span>
+						</h4>
+					</div>
+					<ul class="pricing-content list-unstyled">
+						<li>
+							At vero eos
+						</li>
+						<li>
+							No Support
+						</li>
+						<li>
+							Fusce condimentum
+						</li>
+						<li>
+							Ut non libero
+						</li>
+						<li>
+							Consecte adiping elit
+						</li>
+					</ul>
+					<div class="pricing-footer">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+						</p>
+						<a href="#contact" class="btn yellow-crusta">
+							Sign Up
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--//End Pricing -->
+		</div>
+	</div>
 
+</div>
+</section>
 <!-- Contact -->
 <section id="contact" class="home-section bg-gray">
 	<div class="container">
