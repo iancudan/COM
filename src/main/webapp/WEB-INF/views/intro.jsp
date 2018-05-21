@@ -505,7 +505,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
 						</p>
 						<a href="#contact" class="btn yellow-crusta">
-							Sign Up
+							Buy 
 						</a>
 					</div>
 				</div>
@@ -543,7 +543,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
 						</p>
 						<a href="#contact" class="btn yellow-crusta">
-							Sign Up
+							Buy 
 						</a>
 					</div>
 				</div>
@@ -581,7 +581,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
 						</p>
 						<a href="#contact" class="btn yellow-crusta">
-							Sign Up
+							Buy 
 						</a>
 					</div>
 				</div>
@@ -619,7 +619,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
 						</p>
 						<a href="#contact" class="btn yellow-crusta">
-							Sign Up
+							Buy 
 						</a>
 					</div>
 				</div>
